@@ -1,0 +1,118 @@
+$fonts: 'Poppins', Helvertica, sans-serif;
+$primary-color: #3290bb;
+$secondary-color: #b2d1d6;
+$tertiary-color: #ffffffc0;
+$spacing: 2rem;
+$border-radius: 15px;
+
+body {
+    background-color: #e8eff0;
+    font-family: $fonts;
+    padding: $spacing;
+}
+
+h1 {
+    color: $primary-color;
+    display: inline-block;
+}
+
+p {
+    margin: none;
+    padding: none;
+}
+
+#qr-text {
+    display: block;
+    color: $secondary-color;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    gap: 20px 30px;
+    // gap: 10px 20px;
+    /* row-gap column gap */
+    width: 100%;
+}
+
+.card {
+    padding: 15px 0px;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    box-shadow: 5px 5px 9px #c5c5c5;
+}
+
+.card-inputs {
+    text-align: left;
+    align-items: left;
+    padding: 0px 35px;
+}
+
+#submit {
+    background-color: $primary-color;
+    color: $tertiary-color;
+    border-radius: $border-radius;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fa-qrcode {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.heading {
+    display: inline-block;
+}
+
+.qr-card {
+    background-color: $primary-color;
+    align-items: center;
+}
+
+
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: $tertiary-color;
+}
+
+input[type=color] {
+    margin-bottom: 16px;
+}
+
+#urlError {
+    color: red;
+    // height: 8px;
+}
+
+.options {
+    color: #164e68;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 800px) {
+    .card {
+        flex: 1
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/69f7465c1a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="heading">
+        <i class="fa-solid fa-qrcode fa-2xl"></i>
+        <h1>QR Code Generator</h1>
+
+        <p class="description">
+            Use the below QR generator tool to generate a QR code that you can download! (Right click > save
+            image)<br />
+            You can change the size of the QR code and the colours.
+        </p>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-inputs">
+
+                <p id="urlError"></p>
+                <label for="userUrl">URL:</label><br>
+                <input type="text" id="userUrl" name="userUrl" required>
+
+                <p class="options">Optional Sizing and Colour Options:</p>
+                <label for="width">Width:</label>
+                <input type="number" id="width" name="width" min="10" max="1000" />
+
+                <br />
+                <label for="height">Height:</label>
+                <input type="number" id="height" name="height" min="10" max="1000" />
+
+                <br />
+                <label for="fgColor">Select a foreground color:</label>
+                <input type="color" id="fgColor" name="fgColor" value="#000000">
+
+                <br />
+                <label for="bgColor">Select a background color:</label>
+                <input type="color" id="bgColor" name="bgColor" value="#000000">
+
+                <br />
+                <input id="submit" type="submit" value="Generate">
+
+            </div>
+
+        </div>
+
+        <div class="card qr-card">
+
+            <p id="qr-text">Your QR code will be generated here!</p>
+            <div class="card-qr-code" id="qrCode">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

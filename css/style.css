@@ -1,0 +1,108 @@
+body {
+  background-color: #e8eff0;
+  font-family: "Poppins", Helvertica, sans-serif;
+  padding: 2rem;
+}
+
+h1 {
+  color: #3290bb;
+  display: inline-block;
+}
+
+p {
+  margin: none;
+  padding: none;
+}
+
+#qr-text {
+  display: block;
+  color: #b2d1d6;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+  gap: 20px 30px;
+  /* row-gap column gap */
+  width: 100%;
+}
+
+.card {
+  padding: 15px 0px;
+  background-color: #b2d1d6;
+  border-radius: 15px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  box-shadow: 5px 5px 9px #c5c5c5;
+}
+
+.card-inputs {
+  text-align: left;
+  align-items: left;
+  padding: 0px 35px;
+}
+
+#submit {
+  background-color: #3290bb;
+  color: rgba(255, 255, 255, 0.7529411765);
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fa-qrcode {
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.heading {
+  display: inline-block;
+}
+
+.qr-card {
+  background-color: #3290bb;
+  align-items: center;
+}
+
+input[type=text],
+input[type=number] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3290bb;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.7529411765);
+}
+
+input[type=color] {
+  margin-bottom: 16px;
+}
+
+#urlError {
+  color: red;
+}
+
+.options {
+  color: #164e68;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    flex: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
